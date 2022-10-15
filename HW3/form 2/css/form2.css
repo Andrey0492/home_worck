@@ -1,0 +1,114 @@
+body {
+	background-image: url(../img/001.jpg);
+	 -moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+}
+
+a {
+	color: #68b70d;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.container {
+	width: 400px;
+	height: 570px;
+	background-color: rgb(64, 64, 41, 1);
+	margin: 250px auto 0 auto;
+	text-align: center;
+	border-radius: 35px;
+	box-shadow: 0 -5px 0 #203b40;
+}
+
+.h {
+	margin: 5px 5px 10px 5px;
+	padding: 20px 15px 10px 5px;
+	font-size: 30px;
+
+}
+
+hr {
+	border: none;
+    height: 1.5px;
+    background-color: #2c536c;
+    margin: -10px 0 15px 0;
+}
+
+input[type="text"], 
+input[type="tel"], 
+input[type="email"], 
+input[type="password"] {
+	width: 300px;
+	height: 50px;
+	font-size: 18px;
+	margin-bottom: 25px;
+	border-radius: 20px;
+	padding-left: 40px;
+}
+
+.dws-submit {
+	padding: 13px 30px;
+	margin: 15px 0px 20px 0px;
+	font-size: 15px;
+	color: #bfd300;
+	background-color: #1d6660;
+	border: none;
+	border-bottom: 4px solid #717c7c;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.dws-submit:hover {
+	transition: 0.5s;
+	background: #fff;
+	color: #2c536c;
+}
+
+.dws-input::before {
+	font-family: "FontAwesome";
+	content: "\f007";
+	position: absolute;
+	font-size: 30px;
+	padding: 10px 0 0 7px;
+	color: #26a195;
+	
+}
+
+.dws-input:nth-child(4)::before {
+	content: "\f0e0";
+}
+
+.dws-input:nth-child(5)::before {
+	content: "\f023";
+}
+
+.dws-input:nth-child(3)::before {
+	content: "\f095";
+}
+
+.dws-input:hover::before {
+	color: #0f50c7;
+	transition: : all 0.3s;
+}
+
+.dws-input input:hover {
+	box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
+}
+
+.social i {
+	color: #fff;
+	font-size: 30px;
+	width: 30px;
+	padding: 10px;
+}
+
+.social i:hover {
+	background-color: #fff;
+	color: #1a394f;
+	border-radius: 5px;
+	cursor: pointer;
+}
