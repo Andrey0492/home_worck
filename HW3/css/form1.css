@@ -59,7 +59,7 @@ input::placeholder {
 }
 
 input[type="checkbox"] {
-	margin: 5px;
+	margin: 10px;
 }
 
 .music {
@@ -91,7 +91,7 @@ select[name="s"] {
 	color: blue;
 }
 
-.slider {
+.slider1 {
 	-webkit-appearance: none;
 	border: 1px solid#02031047;
 	width: 300px;
@@ -99,7 +99,7 @@ select[name="s"] {
 	background-image: -webkit-linear-gradient(left,#8870ff 0%, #8870ff 25%, #fff 25%, #fff 100%);
 }
 
-.slider::-webkit-slider-thumb {
+.slider1::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	background: #0ded4acc;
 	width: 20px;
@@ -125,37 +125,62 @@ input[type="search"]{
 	color: blue;
 }
 
-input[type="checkbox2"] {
-	width: 200px;
-	height: 100px;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	background-color: #f40202;
-	outline: none;
-	border-radius: 50px;
-	transition: 0.6s;
+.wrapper {
 	position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
-input:checked[type='checkbox2'] {
-	background: blue;
+.wrapper input {
+	opacity: 0;
+	width: 0;
+	height: 0;
 }
 
-input[type='checkbox2']::before {
-	content: '';
+.slider2 {
 	position: absolute;
-	width: 80px;
-	height: 80px;
-	border-radius: 100%;
-	top:  10px;
-	left: 10px;
-	background: radial-gradient(#fff, #f0f0f0);
-	transform: scale(1.1);
-	transition: 0.6s;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
-input:checked[type='checkbox2']::before {
-	left: 110px;
+.slider2:before {
+	position: absolute;
+    content: "";
+    height: 26px;
+  width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+input:checked + .slider2 {
+	background-color: #2196F3;
+}
+
+input:focus + .slider2 {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider2:before {
+	-webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider2.round {
+	border-radius: 34px;
+}
+
+.slider2.round:before {
+	border-radius: 50%;
 }
 
 .zest {
