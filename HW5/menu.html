@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<title>Dropdown lists</title>
+</head>
+<body>
+	<header>
+		<nav class="dws-menu">
+			<ul>
+				<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Главная</a>
+					<ul>
+						<li><a href="#">Новости</a>
+							<ul>
+								<li><a href="#">Мир</a></li>
+								<li><a href="#">Страна</a></li>
+								<li><a href="#">Город</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Фото</a>
+							<ul>
+								<li><a href="#">Фауна</a></li>
+								<li><a href="#">Флора</a></li>
+								<li><a href="#">Город</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Музыка</a>
+							<ul>
+								<li><a href="#">Рок</a>
+									<ul>
+										<li><a href="#">Панк рок</a></li>
+								        <li><a href="#">Метал</a></li>
+								        <li><a href="#">Хард рок</a></li>
+								    </ul>
+								</li>
+								<li><a href="#">Рэп</a></li>
+								<li><a href="#">R&b</a></li>
+								<li><a href="#">Класика</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Видео</a>
+							<ul>
+								<li><a href="#">Фильмы</a></li>
+								<li><a href="#">Клипы</a></li>
+								<li><a href="#">Ютуб</a></li>
+								<li><a href="#">Мультфильмы</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Книги</a>
+							<ul>
+								<li><a href="#">Художественная</a></li>
+								<li><a href="#">Биография</a></li>
+								<li><a href="#">Стихи</a></li>
+								<li><a href="#">Романы</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Новости</a>
+					<ul>
+						<li><a href="#">Мир</a></li>
+						<li><a href="#">Страна</a></li>
+						<li><a href="#">Город</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i>Портфолио</a>
+					<ul>
+						<li><a href="#">Фауна</a></li>
+						<li><a href="#">Флора</a></li>
+						<li><a href="#">Город</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><i class="fa fa-gamepad" aria-hidden="true"></i>Игры</a>
+					<ul>
+								<li><a href="#">Online</a></li>
+								<li><a href="#">Offline</a></li>
+							</ul>
+				</li>
+				<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i>Видео</a>
+				<ul>
+						<li><a href="#">Фильмы</a></li>
+						<li><a href="#">Клипы</a></li>
+						<li><a href="#">Ютуб</a></li>
+						<li><a href="#">Мультфильмы</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><i class="fa fa-address-card" aria-hidden="true"></i>Контакты</a>
+					<ul>
+						<li><a href="#">Телефон</a></li>
+						<li><a href="#">em@il</a></li>
+						<li><a href="#">ЦПП</a></li>
+						<li><a href="#">Комментарии</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!--*acardion*-->
+
+	<nav class="acardion">
+		<div class="menu">
+			<input type="checkbox" id="check01">
+			<label for="check01">Главная</label>
+			<ul>
+				<li><a href="#">Фото</a></li>
+				<li><a href="#">Видео</a></li>
+				<li><a href="#">Поиск</a></li>
+			</ul>
+		</div>
+		<div class="menu">
+			<input type="checkbox" id="check1">
+			<label for="check1">Фотоальбом</label>
+			<ul>
+				<li><input type="checkbox" id="check1_1">
+					<label class="pp" for="check1_1">Фотоальбом 1</label>
+					<ul class="git">
+						<li><a href="#">Рига</a></li>
+					    <li><a href="#">Вена</a></li>
+					    <li><a href="#">Прага</a></li>
+					    <li><a href="#">Вильнус</a></li>
+					</ul></li>
+				<li><input type="checkbox" id="check1_2">
+					<label class="pp" for="check1_2">Фотоальбом 2</label>
+					<ul class="git">
+						<li><a href="#">Минск</a></li>
+					    <li><a href="#">Киев</a></li>
+					    <li><a href="#">Харьков</a></li>
+					    <li><a href="#">Питер</a></li>
+				</ul>
+			</li>
+		</div>
+		<div class="menu">
+			<input type="checkbox" id="check2">
+			<label for="check2">Видио</label>
+			<ul>
+				<li><input type="checkbox" id="check2_1">
+					<label class="pp" for="check2_1">Гидонлайн</label>
+					<ul class="git">
+						<li><a href="#">Фильмы</a></li>
+					    <li><a href="#">Мультфильмы</a></li>
+					    <li><a href="#">Клипы</a></li>
+					    <li><a href="#">Сериалы</a></li>
+					</ul></li>
+					<li><a href="#">Ютуб</a></li>
+					<li><input type="checkbox" id="check2_2">
+						<label class="pp" for="check2_2">IVI</label>
+						<ul class="git">
+							<li><a href="#">Фильмы</a></li>
+					        <li><a href="#">Мультфильмы</a></li>
+					        <li><a href="#">Клипы</a></li>
+					        <li><a href="#">Сериалы</a></li>
+					    </ul>
+					</li>
+				</li>
+			</ul>
+		</div>
+		<div class="menu">
+			<input type="checkbox" id="check3">
+			<label for="check3">Новости</label>
+			<ul>
+				<li><a href="#">Мировые</a></li>
+				<li><input type="checkbox" id="check3_1">
+					<label class="pp" for="check3_1">Новости стран</label>
+					<ul class="git">
+						<li><a href="#">Украина</a></li>
+					    <li><a href="#">Польша</a></li>
+					    <li><a href="#">Сидней</a></li>
+					    <li><a href="#">Португалия</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+    <footer>
+    		<nav class="dws-footmenu">
+    			<ul>
+					<li><a href="#">Главная</a>
+						<ul>
+							<li><a href="#">Контакты</a>
+    					<ul>
+						    <li><a href="#">Телефон</a></li>
+						    <li><a href="#">em@il</a></li>
+						    <li><a href="#">ЦПП</a>
+						    	<ul>
+						    		<li><a href="#">Телефон</a></li>
+						            <li><a href="#">em@il</a></li>
+						        </ul>
+						    </li>
+						</ul>
+					</li>
+					<li><a href="#">Комментарии</a></li>
+					<li><a href="#">Правила</a>
+						<ul>
+							<li><a href="#">Пункт1</a></li>
+						    <li><a href="#">Пункт2</a></li>
+						    <li><a href="#">Пункт3</a></li>
+						</ul>
+					<li><a href="#">Конфиденциальность</a></li>
+					<li><a href="#">Карта сайта</a></li>
+					<li><a href="#">Оплата</a>
+						<ul>
+						    <li><a href="#">Mastercard</a></li>
+						    <li><a href="#">Visa</a></li>
+						    <li><a href="#">Bitcoin</a></li>
+						</ul>
+					</li>
+						</ul>
+					</li>
+    				<li><a href="#">Контакты</a>
+    					<ul>
+						    <li><a href="#">Телефон</a></li>
+						    <li><a href="#">em@il</a></li>
+						    <li><a href="#">ЦПП</a>
+						    	<ul>
+						    		<li><a href="#">Телефон</a></li>
+						            <li><a href="#">em@il</a></li>
+						        </ul>
+						    </li>
+						</ul>
+					</li>
+					<li><a href="#">Комментарии</a></li>
+					<li><a href="#">Правила</a>
+						<ul>
+							<li><a href="#">Пункт1</a></li>
+						    <li><a href="#">Пункт2</a></li>
+						    <li><a href="#">Пункт3</a></li>
+						</ul>
+					<li><a href="#">Конфиденциальность</a></li>
+					<li><a href="#">Карта сайта</a></li>
+					<li><a href="#">Оплата</a>
+						<ul>
+						    <li><a href="#">Mastercard</a></li>
+						    <li><a href="#">Visa</a></li>
+						    <li><a href="#">Bitcoin</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+	</footer>	
+</body>
+</html>
