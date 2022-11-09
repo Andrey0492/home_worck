@@ -5,10 +5,11 @@ body {
    /*header*/
 header {
 	font-family: Arial, Helvetical, sans-serif;
+	display: flex;
 }
 .dws-menu {
   width:1200px;
-  height:100px;
+  margin: 10px 10px 50px 10px;
 }
 
 .dws-menu ul,
@@ -56,6 +57,7 @@ header {
 	position: absolute;
 	min-width: 200px;
 	display: none;
+	z-index: 2;
 }
 
 .dws-menu li > ul li a {
@@ -76,7 +78,7 @@ header {
 /*******acardion*******/
 
 .acardion {
-  width:500px;
+  width:500px; 
   height:auto;
   font-family:'Open Sans',sans-serif ;
   margin: 20px ;
@@ -103,12 +105,11 @@ header {
   max-height:0;
   transition: all 0.4s;
   background-color:#fff;
-  width:100%;  
+  width:100%; 
 }
 
 .menu ul li a {
   width:100%;
-  height: 20px;
   background-color:#27b9ab;
   display:block;
   text-decoration:none;
@@ -119,7 +120,6 @@ header {
 }
 
 label.pp {
-  height: 20px;
   background-color:#27b9ab;
   display:block;
   text-decoration:none;
@@ -135,19 +135,24 @@ label.pp {
 .menu ul li a:hover {
   background-color:#ff928a;
 }
-.menu label::after {
-	content: "▶";
-	float: right;
-	color:#f9e4e4
+
+.menu label:after {
+    content: '▶';
+    display: inline-block;
+    clear: both;
+    position: static; 
+    color: #f9e4e4;
+    margin-left: 95%;
 }
 
-
-
- .menu :checked+.menu label::after {
-	content: "▼";
+.menu input:checked + label {
+    background-color: #285f8f;
 }
 
-
+.menu input:checked + label:after {
+    transition: transform 0.4s;
+    transform: rotate(90deg);
+}
 
 .menu input:checked ~  ul {
   height:auto;
@@ -160,6 +165,7 @@ label.pp {
 
  footer {
 	font-family: Arial, Helvetical, 'Open Sans', sans-serif;
+	display: flex;
 }
 
 .dws-footmenu ul,
@@ -170,7 +176,6 @@ label.pp {
 
 .dws-footmenu > ul {
 	display: flex;
-	float: left;
 }
 
 .dws-footmenu > ul li a {
