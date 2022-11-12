@@ -1,8 +1,17 @@
+html,
+body {
+	height: 100%;
+}
+
 body {
     max-width: 1200px; 
     margin:10px 30px ;
+    display: flex;
+    flex-direction: column;
    }
+
    /*header*/
+
 header {
 	font-family: Arial, Helvetical, sans-serif;
 	display: flex;
@@ -160,7 +169,6 @@ label.pp {
   transition: all 0.4s linear;
 }
 
-
  /*Footer*/
 
  footer {
@@ -239,4 +247,13 @@ label.pp {
 }
 .dws-footmenu ul li ul li a {
 bottom: -100px;
+}
+
+.dws-menu,
+.acardion {
+	flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
 }
