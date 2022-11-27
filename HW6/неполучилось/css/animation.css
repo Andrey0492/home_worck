@@ -1,0 +1,45 @@
+:root {
+  overflow: hidden; 
+  background-color: blue;
+  display: flex;
+  justify-content: center; 
+}
+
+.sun {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  aspect-ratio: 1 / 1;
+  animation: 4s linear 0s infinite alternate animating-multiple-properties;
+}
+
+.sun:before,
+.sun:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.sun:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes animating-multiple-properties {
+  from {
+    transform: translateY(110vh);
+    background-color: red;
+    filter: brightness(75%);
+ }
+  to {
+    transform: translateY(0);
+    background-color: orange;
+  }
+}

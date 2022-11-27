@@ -1,0 +1,54 @@
+:root {
+  overflow: hidden; 
+  background-color: blue;
+  display: flex;
+  justify-content: center; 
+}
+
+.sun {
+  position: relative;
+  width: 200px;
+  height: 190px;
+  aspect-ratio: 1 / 1;
+  animation:
+    4s linear 0s infinite alternate rise,
+    24s linear 0s infinite psychedelic;
+}
+
+.sun:before,
+.sun:after {
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 10;
+  width: 100px;
+  height: 180px;
+  background: red;
+  border-radius: 150px 150px 0 0;
+  transform: rotate(-46deg);
+  transform-origin: 0 100%;
+}
+
+.sun:after {
+  left: 0;
+  transform: rotate(46deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(110vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes psychedelic {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
